@@ -1,6 +1,6 @@
-# Boosting_the_Performance_of_LLMs_for_QA_with_KG_Integration
+# Boosting the Performance of LLMs for QA with KG Integration
 
-The pipeline focused on optimizing the performance of LLMs for question answering tasks with KG Integration. As shown in Figure 1, the pipeline began with Data Processing, which contained four core tasks: Entities and Relations Extraction, Similarity Matching for each Question, SPARQL Query, and Verbalisation. After Data Processing, the pipeline focused on Prompt Engineering and Response Generation, Fine-tuning Process and Evaluation. The pipeline is introduced with three subsections following the implementation sequence: Data Processing, Prompt Engineering and Response Generation, and Fine-tuning.
+The pipeline focused on optimizing the performance of LLMs for question answering tasks with KG Integration. As shown in Figure 1, the pipeline began with Data Processing, which contained four core tasks: Entities and Relations Extraction, Similarity Matching for each Question, SPARQL Query, and Verbalisation. After Data Processing, the pipeline focused on Prompt Engineering, Response Generation and Evaluation. The pipeline is introduced with three subsections following the implementation sequence: Data Processing, Prompt Engineering and Response Generation.
 
 ![Work Flow Chart](Work%20Flow%20Chart.png)
 **Figure 1:** Workflow Chart Description.
@@ -38,10 +38,3 @@ The structured prompt was delineated into three principal components: the system
 The relevant information was verbalized relevant triples from KG for each competency question. Relevant Information for Enhanced Context was used to integrate with the Competency Question.
 ### User Question:
 Construct the user input as User Question}: The expected user input contains Competency Questions and corresponding Relevant Information for Enhanced Context. Both of them were pushed into LLM to generate the response. Integration was one of the most important key steps of RAG.
-## Fine-tuning
-Figure 2 explained Data Pre-processing for Fine-tuning  Process in Figure \ref{fig:Workflow}. It began with response generation by Mistral 7B given Prompt with Context. Then the generated data was manually selected to ensure the data quality and was transformed into JSONL file. The JSONL file was uploaded to the OpenAI platform by "files.create" method to get the File Object ID. Subsequently, a fine-tuning job of GPT-3.5-turbo was launched with the "fine-tuning.jobs.create" method to generate the Fine-tuning Job ID which was used to retrieve the Fine-tuned Model Name. Finally, the Fine-tuned GPT-3.5-turbo Model generated Responses given Prompt with Context. After LLMs(GPT-3.5-turbo and Fine-tuned GPT-3.5-turbo) had generated all responses for each question, the output data were collected and evaluated the performance of LLMs. The Fine-tuned GPT-3.5-turbo Model with RAG is the final solution to the research question which achieved the highest scores.
-
-The Fine-tuning method has directly improved the performance of the pipeline’s performance for Question Answering tasks not only in the aspect of correct output format but also in the aspect of response quality with an increased number of ground truths. It displayed the potential flexibility of our pipeline for Question Answering tasks given specified KG and Competency Questions. 
-![Fine-tuning Process](fine-tuning%20process.png)
-**Figure 2:** Fine-tuning Process Description.
-
