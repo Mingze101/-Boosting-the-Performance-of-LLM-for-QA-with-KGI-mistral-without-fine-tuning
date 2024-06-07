@@ -8,14 +8,14 @@ Process sequence is:
 
 ## Data Processing Workflow
 
-### 1. Entity and Relation Extraction
+### 1. Entity and Relation Extraction from Knowledge Graph
 **Notebook**: `entity_relation_extraction_kg.ipynb`  
 **Description**: Extract entities and relations from data and generate a knowledge graph.  
 **Input**: `output.ttl` (Knowledge graph file)  
 **Output**: `extracted_entity_list.xlsx`, `extracted_relation_list.xlsx`  
 **Manual Processing**: `extracted_entity_with_external_description.xlsx` - manually add descriptions.
 
-### 2. Question Generation
+### 2. Entity and Relation Extraction from Question
 **Notebook**: `entity_relation_extraction_questions.ipynb`  
 **Description**: Generate questions based on the knowledge graph for further processing or learning.  
 **Input**: Questions array named as `texts`  
