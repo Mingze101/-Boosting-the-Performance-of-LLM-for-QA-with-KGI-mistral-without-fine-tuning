@@ -48,9 +48,8 @@ Process sequence is:
 **Input**: `train_8.xlsx` (final verbalized output)  
 **Output**: `train_result.xlsx`, `result_with_score.xlsx`
 
-### Baseline: RAG Mistral 7b
+### Baseline of RAG Mistral 7b
 **Location**: Folder "mistral without KG"  
 **Notebook**: `RAG based on mistral 7b.ipynb`  
 **Description**: Baseline QA task without knowledge graph input.  
-**Input**: `train_8.xlsx`  
-**Output**: `train_result.xlsx`, `result_with_score.xlsx`
+**Output**: `train_result.xlsx`, `train_result_mistral_withoutkg.xlsx`
