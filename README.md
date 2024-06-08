@@ -1,22 +1,5 @@
 # KGMistral: Towards Boosting the Performance of Large Language Models for Question Answering with Knowledge Graph Integration
 
-# Requirement
-
-bitsandbytes==0.43.1
-bleu
-accelerate==0.21.0
-transformers==4.40.1
-huggingface_hub==0.22.2
-peft==0.4.0
-pandas
-spacy
-matplotlib.pyplot
-torch==12.1
-trl==0.4.7
-re
-scipy
-rdflib
-rouge
 
 # How to start?
 Process sequence is:
@@ -108,3 +91,25 @@ Process sequence is:
 **Description**: Baseline QA task without knowledge graph input.  
 
 **Output**: `train_result.xlsx`, `train_result_mistral_withoutkg.xlsx`
+
+## Requirements
+
+To install the necessary packages, you can use the following pip command after cloning the repository:
+
+```bash
+pip install -r requirements.txt
+bitsandbytes==0.43.1
+bleu
+accelerate==0.21.0
+transformers==4.40.1
+huggingface_hub==0.22.2
+peft==0.4.0
+pandas
+spacy
+matplotlib.pyplot
+torch==12.1
+trl==0.4.7
+re
+scipy
+rdflib
+rouge
