@@ -1,0 +1,37 @@
+Who is working in the Computational Materials Science field?
+What are the research projects associated to EMMO?
+Who are the contributors of the data "datasets"?
+Who is working with Researcher "Ebrahim Norouzi" in the same group?
+who is the email address of "ParaView"?
+What are the affilliations of Volker Hofmann?
+What is "Molecular Dynamics" Software? List the programming language, documentation page, repository, and license information.
+What are pre- and post-processing tools for MD simulations?
+What are some workflow environments for computational materials science?
+How should I cite pyiron?
+Where can I find a list of interatomic potentials?
+What are python libraries used for calculating local atomic structural environment?
+What are the electronic lab notebooks available?
+What are the software for Molecular Dynamics (MD)?
+What are the ontologies in nanomaterials domain?
+What is DAMASK?
+What are the data portals for materials science ontologies?
+What are the instruments for APT?
+In which institution can I find tomography equipment?
+What are the educational resources for Ontology?
+What is the API of Materials Project?
+Which simulation software have a python API?
+What is the documentation of the "MatDB Online"?
+What are the types of software licenses?
+What are the software used to produce the data in the Materials Cloud repository?
+What are datasets produced by the BAM organization?
+What are some available datasets of mechanical properties of steels?
+What are datasets related to "Transmission electron microscopy"?
+What is the license of the dataset "Elastic Constant Demo Data"?
+What is the repository for "BAM reference data"?
+What are the different data formats in the "BAM reference data"?
+What is the software version of "pacemaker"?
+What is the field of research "BAM reference data"?
+What is the description of the "BAM reference data"?
+What are the datasets produced in 2022?
+Who is the creators of the "BAM reference data"?
+What are the datasets published by "BAM"?
