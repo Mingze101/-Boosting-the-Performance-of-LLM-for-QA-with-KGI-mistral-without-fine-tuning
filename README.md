@@ -73,6 +73,7 @@ Process sequence is:
 **Location**: Folder "mistral with KG"  
 
 **Notebook**: `RAG mistral 7b v1.ipynb`  
+
 **Description**: QA task based on verbalized contexts from the knowledge graph.  
 
 **Input**: `train_dataset` (final verbalized output)  
