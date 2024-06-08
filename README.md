@@ -1,7 +1,6 @@
 # KGMistral: Towards Boosting the Performance of Large Language Models for Question Answering with Knowledge Graph Integration
 
 
-
 # How to start?
 Process sequence is:
 
@@ -12,7 +11,6 @@ Process sequence is:
 **Description**: Extract entities and relations from data and generate a knowledge graph.  
 **Input**: `output.ttl` (Knowledge graph file)  
 **Output**: `extracted_entity_list.xlsx`, `extracted_relation_list.xlsx`  
-**Manual Processing**: `extracted_entity_with_external_description.xlsx` - manually add descriptions.
 
 ### 2. Entity and Relation Extraction from Question
 **Notebook**: `entity_relation_extraction_questions.ipynb`  
