@@ -14,16 +14,15 @@ Process sequence is:
 **Details**: This code parses an RDF file in Turtle format to extract unique subject entities, their labels, and descriptions, storing this information in a pandas DataFrame which is then exported to an Excel file. Additionally, it extracts predicates used in the RDF graph, including their namespaces, and saves this information in another DataFrame, also exported to Excel. The namespaces are predefined and used to appropriately categorize predicates within the RDF data, ensuring accurate extraction and representation of relationships within the graph.
 
 ### 2. Entity and Relation Extraction from Question
-**Notebook**: `entity_relation_extraction_questions.ipynb`  
+**Notebook**: `entity_relation_extraction_questions.ipynb`.
 **Description**: Extract entities and relations from given questions.  
-**Input**: Questions array from `questions.txt`
-**Output**: `EntityandRelationfromQuestionUp.xlsx`
+**Input**: Questions array from `questions.txt`.
+**Output**: `EntityandRelationfromQuestionUp.xlsx`.
 **Details**: This code processes a list of questions using the spaCy library to extract named entities and predicate verbs. It utilizes a custom component to detect text within quotes and identifies noun phrases and verbs to determine the key entities and actions in each question. The extracted entities and predicate verbs are then stored in a pandas DataFrame, which is concatenated from individual results and finally exported to an Excel file for further analysis.
 
 ### 3. Similarity Matching
-**Notebook**: `similarity_matching.ipynb`  
+**Notebook**: `similarity_matching.ipynb`.
 **Description**: For each extracted entity and relation, perform cosine similarity matching between words to identify the top 5 entities and the top 9 relations. For each question, perform cosine similarity matching between sentences to identify the top 8 entities with description information.  
-**Input**:
 **Input**: `extracted_headentity_list.xlsx`, `EntityandRelationfromQuestion.xlsx`, `extracted_relation_list.xlsx`, Questions array named as `texts`  
 **Output**: `relevant_entities_relations.xlsx`
 **Details**: This code processes a series of competency questions by leveraging BERT embeddings to find the most similar entities and relations, merging results from both word and sentence-level similarity matching. It initially uses BERT to encode and compute cosine similarity between question text and entity descriptions, identifying top similar entities, and then utilizes spaCy for relation similarity matching. Finally, it merges the results from sentence-level and word-level similarity analyses, removing duplicates to create a comprehensive list of relevant entities and relations, which is then saved to an Excel file for further use.
@@ -31,7 +30,7 @@ Process sequence is:
 ### 4. SPARQL Querying
 **Notebook**: `sparql.ipynb`  
 **Description**: Use SPARQL to find relevant triples from the knowledge graph.  
-**Input**: `output.ttl` (KG file) , 'relevant_entities_relations.xlsx'
+**Input**: `output.ttl` (KG file), 'relevant_entities_relations.xlsx'
 **Output**: `for_verbalisation.xlsx`
 **Details**: This code processes an RDF graph to extract relevant triples based on given entity and relation URIs, and saves the results to an Excel file. It first initializes the RDF graph by loading a Turtle file and defines several SPARQL query templates for different scenarios to search head and tail entities. The script then iterates over a DataFrame containing entity and relation URIs, applying these SPARQL queries to find and collect relevant triples, which are subsequently stored in the DataFrame and exported to a new Excel file for further use.
 
