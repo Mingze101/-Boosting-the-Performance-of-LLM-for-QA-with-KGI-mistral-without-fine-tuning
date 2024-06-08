@@ -98,6 +98,10 @@ To install the necessary packages, you can use the following pip command after c
 
 ```bash
 pip install -r requirements.txt
+```
+
+And here are the detailed dependencies required:
+```bash
 bitsandbytes==0.43.1
 bleu
 accelerate==0.21.0
@@ -113,3 +117,4 @@ re
 scipy
 rdflib
 rouge
+```
