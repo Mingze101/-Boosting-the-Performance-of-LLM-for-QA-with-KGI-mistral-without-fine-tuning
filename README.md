@@ -1,6 +1,5 @@
 # KGMistral: Towards Boosting the Performance of Large Language Models for Question Answering with Knowledge Graph Integration
 
-The pipeline focused on optimizing the performance of LLMs for question answering tasks with KG Integration. The pipeline began with Data Processing, which contained four core tasks: Entities and Relations Extraction, Similarity Matching for each Question, SPARQL Query, and Verbalisation. After Data Processing, the pipeline focused on Prompt Engineering, Response Generation and Evaluation. The pipeline is introduced with three subsections following the implementation sequence: Data Processing, Prompt Engineering and Response Generation.
 
 
 # How to start?
